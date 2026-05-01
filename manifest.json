@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Retro Player",
+  "version": "1.0",
+  "description": "Retro remake for YouTube & Bilibili",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*", "https://www.bilibili.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://www.bilibili.com/*"],
+      "js": ["dist/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
