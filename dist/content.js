@@ -104,7 +104,7 @@
 .rs-hl{display:flex;align-items:center;gap:6px;cursor:pointer}
 .rs-icon{font-size:16px;line-height:1;display:flex;align-items:center;justify-content:center}
 
-/* Pin 按钮样式 - 修正为不突兀的灰色 */
+/* Pin button style */
 .rs-pin{cursor:pointer;border:none;background:transparent;color:${C.fg};font-size:14px;padding:0;line-height:1;opacity:.3;transition: all 0.3s ease; transform: rotate(45deg); outline:none;}
 .rs-pin.active{opacity:1; color:#666; transform: rotate(0deg); filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));}
 
@@ -262,7 +262,7 @@ input[type=range].rs-s::-webkit-slider-thumb{-webkit-appearance:none;height:16px
       $.c.style.left = S.x + "px"; 
       $.c.style.top = S.y + "px"; 
       
-      // 同步数据到 UI
+      // Sync UI
       $.spd.value = S.speed;
       $.noi.value = S.noise;
       $.wob.value = S.wobble;
