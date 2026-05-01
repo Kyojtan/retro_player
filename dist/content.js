@@ -280,7 +280,6 @@ input[type=range].rs-s::-webkit-slider-thumb{-webkit-appearance:none;height:16px
 
   build();
 
-  // ─── 全局唤醒逻辑：解决浏览器自动播放限制 ───
   const unlockAudio = () => {
     if (S.power) {
       const ctx = ensureAC();
